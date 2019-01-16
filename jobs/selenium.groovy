@@ -6,7 +6,7 @@ pipelineJob('selenium') {
                   branch('test-jenkins')
                   remote {
                     url('https://github.com/AVORA-LTD/selenium.git')
-                    credentialsId('github-clone')
+                    credentials('github-clone')
                   }
                 }
                 scriptPath('JenkinsFile')
