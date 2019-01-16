@@ -11,6 +11,10 @@ pipelineJob('selenium') {
                 }
                 scriptPath('Jenkinsfile')
             }
+           triggers {
+             //  githubPush()
+             cron('15 7 * * *')
+           }
         }
     }
 }
