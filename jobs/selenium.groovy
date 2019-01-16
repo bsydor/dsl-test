@@ -4,8 +4,10 @@ pipelineJob('selenium') {
             scm {
                 git {
                   branch('test-jenkins')
-                  remote('https://github.com/AVORA-LTD/selenium.git')
-                  credentialsId('github-clone')
+                  remote {
+                    url('https://github.com/AVORA-LTD/selenium.git')
+                    credentialsId('github-clone')
+                  }
                 }
                 scriptPath('JenkinsFile')
             }
