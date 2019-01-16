@@ -9,7 +9,7 @@ pipelineJob('selenium') {
                     credentials('github-clone')
                   }
                 }
-                scriptPath('JenkinsFile')
+                scriptPath('Jenkinsfile')
             }
         }
     }
