@@ -3,7 +3,7 @@ pipelineJob('Backend') {
         cpsScm {
             scm {
                 git {
-                  branches('uat', 'develop')
+                  branches('uat', 'develop', 'dev', 'test-jenkins')
                   remote {
                     url('https://github.com/AVORA-LTD/Backend.git')
                     credentials('github-clone')
