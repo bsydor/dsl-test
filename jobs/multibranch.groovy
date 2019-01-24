@@ -1,4 +1,4 @@
-multibranchPipelineJob('Backend') {
+multibranchPipelineJob('Backend-multi') {
   branchSources {
     github {
       scanCredentialsId('github-clone')
